@@ -1,0 +1,118 @@
+/* تنسيق الخطوط */
+body {
+    font-family: 'Cairo', sans-serif;
+    background-image: url('x/cat.jpg'); /* استبدل هذا الرابط برابط الصورة الخاصة بك */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+#voter-count {
+    font-size: 18px;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+#vote-form p, #person-selection p, h2 {
+    color: #555;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select {
+    cursor: pointer;
+}
+
+.person-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.person {
+    text-align: center;
+}
+
+.person-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+select, input[type="radio"] {
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius:30% 70% / 50% 50%;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #007BFF;
+}
+
+#results p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+}
+
+#results span {
+    font-weight: bold;
+    color: #333;
+}

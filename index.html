@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام التصويت</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>نظام التصويت</h1>
+            <p><mark>عدد المصوتين:</mark> <span id="voter-count">0</span> / 100</p> <!-- هنا يتم عرض عدد المصوتين -->
+        </div>
+
+        <div id="vote-form">
+            <p>أدخل رقمك:</p>
+            <input type="text" id="user-number" placeholder="أدخل الرقم">
+            <button class="btn" onclick="verifyUser()">تحقق</button>
+        </div>
+        <!--<div id="list-selection" style="display:none;">
+            <p>اختر القائمة التي تريد التصويت منها:</p>
+            <select id="list-dropdown"  onchange="showCandidates()">
+                <option value="" disabled selected>اختر القائمة</option>
+                <option value="list1">القائمة 1</option>
+                <option value="list2">القائمة 2</option>
+                <option value="list3">القائمة 3</option>
+            </select>
+        </div>-->
+        <div id="person-selection" style="display:none;">
+            <p>مرحبا <span id="user-name"></span>! اختر الشخص للتصويت له:</p>
+            <div class="person-container">
+                <div class="person">
+                    <img src="x/ca.jfif" alt="شخص 1" class="person-image">
+                    <p>ابيض 1</p>
+                    <p>معلومات عن الشخص 1 هنا</p>
+                    <input type="radio" name="person" value="شخص 1">
+                </div>
+                <div class="person">
+                    <img src="x/cat.jpg" alt="شخص 2" class="person-image">
+                    <p>اسود 2</p>
+                    <p>معلومات عن الشخص 2 هنا</p>
+                    <input type="radio" name="person" value="شخص 2">
+                </div>
+                <div class="person">
+                    <img src="x/c.jfif" alt="شخص 3" class="person-image">
+                    <p>رمادي 3</p>
+                    <p>معلومات عن الشخص 3 هنا</p>
+                    <input type="radio" name="person" value="شخص 3">
+                </div>
+            </div>
+            <button class="btn" onclick="vote()">تصويت</button>
+        </div>
+       
+        <div id="results">
+            <h2>نتائج التصويت:</h2>
+            <p>الابيض1 :<span id="votes1">0</span> صوت - <span id="percent1">0%</span></p>
+            <p>اسود 2: <span id="votes2">0</span> صوت - <span id="percent2">0%</span></p>
+            <p>رمادي 3: <span id="votes3">0</span> صوت - <span id="percent3">0%</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
